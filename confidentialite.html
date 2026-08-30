@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rootborn — politique de confidentialité</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 42rem; margin: 0 auto; padding: 3rem 1.5rem;
+    line-height: 1.65; color: #1a1a1a; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e8e8e8; background: #16181c; } a { color: #7ab8ff; } }
+  h1 { font-size: 1.7rem; margin-bottom: .3rem; }
+  .maj { color: #666; margin-top: 0; font-size: .92rem; }
+  @media (prefers-color-scheme: dark) { .maj { color: #9aa0a6; } }
+  h2 { font-size: 1.12rem; margin-top: 2.2rem; }
+  ul { padding-left: 1.2rem; }
+  footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid #ddd; font-size: .9rem; color: #666; }
+  @media (prefers-color-scheme: dark) { footer { border-color: #333; color: #9aa0a6; } }
+</style>
+</head>
+<body>
+
+<h1>Politique de confidentialité</h1>
+<p class="maj">Application « Rootborn » — dernière mise à jour : 30 août 2026</p>
+
+<h2>1. Qui</h2>
+<p>
+  Rootborn est un bot Discord privé, développé et utilisé par un particulier pour
+  la gestion d'une communauté de joueurs. Il n'est proposé à aucun tiers et ne
+  constitue pas un service commercial.
+</p>
+
+<h2>2. Données Google auxquelles l'application accède</h2>
+<p>
+  L'application demande une seule autorisation Google :
+  <code>https://www.googleapis.com/auth/drive.file</code>.
+</p>
+<p>
+  Cette autorisation limite l'accès <strong>aux seuls fichiers créés par
+  l'application elle-même</strong>. L'application ne peut ni lire, ni modifier,
+  ni supprimer les autres fichiers du Google Drive de l'utilisateur, et n'en a
+  aucune connaissance.
+</p>
+
+<h2>3. Ce qui est déposé dans le Drive</h2>
+<p>
+  Uniquement des archives de sauvegarde produites par le bot, contenant ses
+  propres données de fonctionnement : configuration, statistiques d'activité des
+  membres de la communauté, historique interne. Ces archives sont chiffrées
+  (AES-256-GCM) avant d'être envoyées.
+</p>
+<p>
+  Elles sont déposées dans un dossier dédié, créé par l'application. Les archives
+  les plus anciennes sont automatiquement supprimées afin de n'en conserver qu'un
+  nombre limité.
+</p>
+
+<h2>4. Ce qui n'est pas fait</h2>
+<ul>
+  <li>Aucune donnée n'est transmise à un tiers, vendue, louée ou partagée.</li>
+  <li>Aucune donnée Google n'est utilisée à des fins publicitaires ou d'analyse.</li>
+  <li>Aucun profilage, aucun entraînement de modèle, aucune revente.</li>
+  <li>Aucune donnée du Drive n'est lue : l'application n'écrit que ses propres fichiers.</li>
+</ul>
+
+<h2>5. Conservation et suppression</h2>
+<p>
+  Les archives restent dans le Drive de leur propriétaire, qui peut les supprimer
+  à tout moment depuis son interface Google Drive. L'autorisation accordée à
+  l'application peut être révoquée à tout moment depuis
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+  La révocation interrompt immédiatement tout accès.
+</p>
+
+<h2>6. Sécurité</h2>
+<p>
+  Les identifiants d'accès sont stockés dans un fichier de configuration privé sur
+  le serveur du bot, jamais dans le code source ni dans une archive publique. Les
+  échanges avec les serveurs Google se font exclusivement en HTTPS.
+</p>
+
+<h2>7. Contact</h2>
+<p>
+  Toute question relative à cette politique peut être adressée à l'adresse
+  électronique renseignée comme contact d'assistance sur l'écran de consentement
+  Google de l'application.
+</p>
+
+<footer>
+  <a href="index.html">Retour</a>
+</footer>
+
+</body>
+</html>
